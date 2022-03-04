@@ -1,0 +1,52 @@
+body {
+  @include font();
+}
+
+.container {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 130px;
+  height: 40px;
+}
+
+.title {
+  @include title();
+  letter-spacing: 2px;
+  text-shadow: $text-shadow;
+}
+
+.one {
+  width: 300px / 960px * 100%;
+  height: 100px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font: 24px/28px Raleway, arial, helvetica {
+    weight: bold;
+  }
+  @include ghostVerticalAlign();
+}
+.two {
+  width: 200px / 960px * 100%;
+  height: 100px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  @include respFontSize(20px, 28px, 480px, 1280px, 22px);
+}
+.three {
+  width: 100px / 960px * 100%;
+  height: 100px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font: 28px/32px Raleway, arial, helvetica {
+    weight: bold;
+  }
+}
+.four {
+  @include triangle(down);
+}
